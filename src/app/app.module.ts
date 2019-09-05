@@ -19,7 +19,7 @@ import { SearchComponent } from './body/search/search.component';
 import { FilterComponent } from './body/filter/filter.component';
 import { MovieListComponent } from './body/movie-list/movie-list.component';
 import { TicketFormComponent } from './ticket-form/ticket-form.component';
-import {DialogComponent } from './body/dialog/dialog.component'
+import { CardsComponent } from './body/cards/cards.component';
 
 
 @NgModule({
@@ -32,7 +32,8 @@ import {DialogComponent } from './body/dialog/dialog.component'
     SearchComponent,
     FilterComponent,
     MovieListComponent,
-    TicketFormComponent
+    TicketFormComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

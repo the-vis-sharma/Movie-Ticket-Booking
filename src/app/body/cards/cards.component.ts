@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatDialog} from '@angular/material/dialog';
 import {DialogComponent} from '../dialog/dialog.component';
@@ -9,6 +9,8 @@ import {DialogComponent} from '../dialog/dialog.component';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
+
+  @Input() favourite : any;
 
   constructor(public dialog:MatDialog) { }
   openDialog(){

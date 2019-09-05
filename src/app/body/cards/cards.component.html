@@ -1,19 +1,15 @@
-<mat-card class="example-card">
+<mat-card>
+	<mat-card-content fxLayout="column">
+		<div>
+			<img mat-card-image src="https://m.media-amazon.com/images/M/MV5BMTk5ODUxMjIzNV5BMl5BanBnXkFtZTcwMDI1MTMyMQ@@._V1_SX300.jpg" alt="Photo of a Shiba Inu">
+			<button mat-icon-button color="warn" (click)="openDialog()" class="favourite-icon">
+				<i class="material-icons">favorite</i>
+			</button>
+		</div>
 
-  <mat-card-content fxLayout="column">
-
-    	<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-
-<div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
-	Movie Name:
-	<button mat-icon-button color="warn" (click)="openDialog()"><i class="material-icons">
-favorite
-</i></button>
-</div>
-
-<div fxLayout="row" fxLayoutAlgin="space-between" fxLayoutGap="20px">
-	Rating:4.1
-    <button mat-flat-button color="primary" >BOOK TICKETS</button>
-</div>
-  </mat-card-content>
+		<div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
+			<p>{{ favourite.imdbId }} <span class="highlight">(4.1/5 <i class="material-icons rating-star">star</i>)</span></p>
+			<a routerLink="/bookTicket"><button mat-flat-button color="primary" >Book Tickets</button></a>
+		</div>
+  	</mat-card-content>
 </mat-card>

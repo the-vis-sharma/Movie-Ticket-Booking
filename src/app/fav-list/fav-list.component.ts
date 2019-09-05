@@ -8,17 +8,20 @@ import { MovieService } from '../movie.service';
 })
 export class FavListComponent implements OnInit {
 
+  favouriteList : [];
+
   constructor(private movieService : MovieService) { 
     movieService.getFavouriteList("visnu").subscribe(data => {
-      console.log("apka data: ",data);
-    });
-
-    movieService.modifyComment("5d711411b81a85499e58c079", "this is fucking awesome.").subscribe(data => {
-      console.log("comment modified: ", data);
+      console.log("apka data: ",data.data);
+      this.favouriteList = data.data;
     });
   }
 
   ngOnInit() {
   }
+
+  /*this.movieService.modifyComment("5d711411b81a85499e58c079", "this is fucking awesome.").subscribe(data => {
+    console.log("comment modified: ", data.data);
+  });*/
 
 }
