@@ -16,6 +16,7 @@ import { FavListComponent } from './fav-list/fav-list.component';
 import { MyBookingComponent } from './my-booking/my-booking.component';
 import { SearchComponent } from './body/search/search.component';
 import { FilterComponent } from './body/filter/filter.component';
+import { MovieListComponent } from './body/movie-list/movie-list.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FilterComponent } from './body/filter/filter.component';
     FavListComponent,
     MyBookingComponent,
     SearchComponent,
-    FilterComponent
+    FilterComponent,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,

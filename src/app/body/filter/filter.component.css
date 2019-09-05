@@ -1,5 +1,16 @@
-.filter-label{
-	display: flex;
-  flex-direction: column;
-  width: 30%;
+form {
+  padding : 60px;
+}
+
+.form {
+  width: 50%;
+}
+
+.location {
+width: 100%;
+}
+
+.btn {
+width: 100px;
+height: 60px;
 }
