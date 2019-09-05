@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialogModule} from '@angular/material/dialog';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-
+import {MatDialog} from '@angular/material/dialog';
+import {DialogComponent} from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-cards',
@@ -10,7 +10,10 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
 })
 export class CardsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog:MatDialog) { }
+  openDialog(){
+  	this.dialog.open(DialogComponent);
+  }
   ngOnInit() {
   }
 

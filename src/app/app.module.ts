@@ -10,7 +10,10 @@ import { FilterComponent } from './body/filter/filter.component';
 import { CardsComponent } from './body/cards/cards.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
-import { DialogComponent } from './body/dialog/dialog.component';
+import {DialogComponent } from './body/dialog/dialog.component'
+import {MatDialogModule} from '@angular/material/dialog';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatFormFieldModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,8 +21,9 @@ import { DialogComponent } from './body/dialog/dialog.component';
     SearchComponent,
     FilterComponent,
     CardsComponent,
-    DialogComponent
+    DialogComponent,
   ],
+  entryComponents:[DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,7 +32,10 @@ import { DialogComponent } from './body/dialog/dialog.component';
     MatOptionModule,
     MatSelectModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    FlexLayoutModule,
+    MatFormFieldModule
 
   ],
   providers: [],
