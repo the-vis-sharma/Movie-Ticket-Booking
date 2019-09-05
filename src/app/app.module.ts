@@ -17,6 +17,7 @@ import { MyBookingComponent } from './my-booking/my-booking.component';
 import { SearchComponent } from './body/search/search.component';
 import { FilterComponent } from './body/filter/filter.component';
 import { MovieListComponent } from './body/movie-list/movie-list.component';
+import { TicketFormComponent } from './ticket-form/ticket-form.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MovieListComponent } from './body/movie-list/movie-list.component';
     MyBookingComponent,
     SearchComponent,
     FilterComponent,
-    MovieListComponent
+    MovieListComponent,
+    TicketFormComponent
   ],
   imports: [
     BrowserModule,

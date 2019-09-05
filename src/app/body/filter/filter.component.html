@@ -1,6 +1,5 @@
-<form fxLayout="column" fxLayoutAlign="center center" >
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px" class="form" >
-<mat-form-field appearance="outline" fxFle>
+<form fxLayout="row" fxLayout.lt-md="column">
+<mat-form-field fxFlex>
   <mat-label>FILTER BY GENRE</mat-label>
   <mat-select #fontSize value="16px">
     <mat-option value="action">Action</mat-option>
@@ -8,8 +7,4 @@
     <mat-option value="comedy">Comedy</mat-option>
   </mat-select>
 </mat-form-field>
-<button mat-raised-button class="btn">
-    Filter
-</button>
-</div>
 </form>
