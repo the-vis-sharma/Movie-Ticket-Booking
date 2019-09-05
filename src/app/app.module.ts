@@ -8,12 +8,15 @@ import { HeaderComponent} from './navigation/header/header.component';
 import { SidenavBarComponent } from './navigation/sidenav-bar/sidenav-bar.component';
 import { MatButtonModule, MatToolbarModule, MatButtonToggleModule, MatSidenavModule, MatMenuModule,
    MatSliderModule, MatSlideToggleModule, MatIconModule, MatCardModule, MatGridListModule,
-    MatListModule, MatFormFieldModule, MatInputModule, MatChipsModule, MatPaginatorModule} from '@angular/material';
+    MatListModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatOptionModule, MatChipsModule, MatPaginatorModule} from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FavListComponent } from './fav-list/fav-list.component';
 import { MyBookingComponent } from './my-booking/my-booking.component';
+import { SearchComponent } from './body/search/search.component';
+import { FilterComponent } from './body/filter/filter.component';
+
 
 @NgModule({
   declarations: [
@@ -21,8 +24,9 @@ import { MyBookingComponent } from './my-booking/my-booking.component';
     HeaderComponent,
     SidenavBarComponent,
     FavListComponent,
-    MyBookingComponent
-   
+    MyBookingComponent,
+    SearchComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,9 @@ import { MyBookingComponent } from './my-booking/my-booking.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatOptionModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
