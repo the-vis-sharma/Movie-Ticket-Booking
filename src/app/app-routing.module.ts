@@ -9,7 +9,7 @@ const routes: Routes = [
   // {path: 'addItem:id', component: InventoryFormComponent},
    {path: 'favList', component: FavListComponent},
    {path: 'myBooking', component: MyBookingComponent},
-  // {path: 'welcome', component: WelcomeComponent}
+  //  {path: 'welcome', component: WelcomeComponent}
 ];
 
 @NgModule({

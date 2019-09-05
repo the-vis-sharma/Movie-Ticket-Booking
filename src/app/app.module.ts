@@ -16,6 +16,9 @@ import { FavListComponent } from './fav-list/fav-list.component';
 import { MyBookingComponent } from './my-booking/my-booking.component';
 import { SearchComponent } from './body/search/search.component';
 import { FilterComponent } from './body/filter/filter.component';
+import { CardsComponent } from './body/cards/cards.component';
+import {DialogComponent } from './body/dialog/dialog.component'
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -26,8 +29,11 @@ import { FilterComponent } from './body/filter/filter.component';
     FavListComponent,
     MyBookingComponent,
     SearchComponent,
-    FilterComponent
+    FilterComponent,
+    CardsComponent,
+    DialogComponent,
   ],
+  entryComponents:[DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -53,7 +59,9 @@ import { FilterComponent } from './body/filter/filter.component';
     HttpClientModule,
     MatPaginatorModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
