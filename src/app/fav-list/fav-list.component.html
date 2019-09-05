@@ -4,46 +4,88 @@
     My Favourite List of Movies
 </h1>
 
-    <section fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center" fxLayout.gt-xs="row">
-
+<section fxLayout="column" fxLayoutGap="25px" fxLayoutAlign="center" fxLayout.gt-xs="row" class="header-bar">
+        <mat-card fxFlex=350px>
+            <mat-card-title>
+                Movie Name:
+            </mat-card-title>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content fxLayoutAlign="center">
+                <button mat-icon-button color="warn" (click)="openDialog()">
+                    <i class="material-icons">
+                        favorite
+                    </i>
+                </button>
+            </mat-card-content>
+            <mat-card-content fxLayoutAlign="center">
+                Rating:4.1
+            </mat-card-content>
+            <mat-card-actions fxLayoutAlign="center">
+                <button mat-flat-button color="primary"><a routerLink="/bookTicket">BOOK TICKETS</a></button>
+            </mat-card-actions>
+        </mat-card>
+    
+        <mat-card fxFlex=350px>
+                <mat-card-title>
+                    Movie Name:
+                </mat-card-title>
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content fxLayoutAlign="center">
+                    <button mat-icon-button color="warn" (click)="openDialog()">
+                        <i class="material-icons">
+                            favorite
+                        </i>
+                    </button>
+                </mat-card-content>
+                <mat-card-content fxLayoutAlign="center">
+                    Rating:4.1
+                </mat-card-content>
+                <mat-card-actions fxLayoutAlign="center">
+                    <button mat-flat-button color="primary"><a routerLink="/bookTicket">BOOK TICKETS</a></button>
+                </mat-card-actions>
+            </mat-card>   
             
-
             <mat-card fxFlex=350px>
                     <mat-card-title>
-                            Product Name:  
-                            <!-- {{data.productName}} -->
-                         </mat-card-title>
-                         <img mat-card-image src="assets/images/pic1.webp">
-                         <mat-card-content>
-                             Product category:
-                         </mat-card-content>
-                         <mat-card-content>
-                             units: 
-                         </mat-card-content>
-                         <mat-card-content>
-                             price:
-                         </mat-card-content>
-                         <mat-card-content>
-                             area:
-                         </mat-card-content>
-                         <mat-card-content>
-                             zone: 
-                         </mat-card-content>
-                         <mat-card-content>
-                             shelf: 
-                         </mat-card-content>
-                         <mat-card-content>
-                             tags: 
-                         </mat-card-content>
-                         <mat-card-content>
-                             Last updated: 
-                         </mat-card-content>
-                         <mat-card-actions>
-                             <button mat-raised-button (click)="openDialog()">Edit</button>
-                         </mat-card-actions>
-                         </mat-card>
-                       
-        </section>
-
-
+                        Movie Name:
+                    </mat-card-title>
+                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                    <mat-card-content fxLayoutAlign="center">
+                        <button mat-icon-button color="warn" (click)="openDialog()">
+                            <i class="material-icons">
+                                favorite
+                            </i>
+                        </button>
+                    </mat-card-content>
+                    <mat-card-content fxLayoutAlign="center">
+                        Rating:4.1
+                    </mat-card-content>
+                    <mat-card-actions fxLayoutAlign="center">
+                        <button mat-flat-button color="primary"><a routerLink="/bookTicket">BOOK TICKETS</a></button>
+                    </mat-card-actions>
+                </mat-card>
+            
+                <mat-card fxFlex=350px>
+                        <mat-card-title>
+                            Movie Name:
+                        </mat-card-title>
+                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                        <mat-card-content fxLayoutAlign="center">
+                            <button mat-icon-button color="warn" (click)="openDialog()">
+                                <i class="material-icons">
+                                    favorite
+                                </i>
+                            </button>
+                        </mat-card-content>
+                        <mat-card-content fxLayoutAlign="center">
+                            Rating:4.1
+                        </mat-card-content>
+                        <mat-card-actions fxLayoutAlign="center">
+                            <button mat-flat-button color="primary"><a routerLink="/bookTicket">BOOK TICKETS</a></button>
+                        </mat-card-actions>
+                    </mat-card>   
+    
+                    
+    
+          </section>
 

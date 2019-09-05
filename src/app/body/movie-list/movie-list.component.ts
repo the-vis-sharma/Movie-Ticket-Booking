@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { CommentDialogComponent } from '../comment-dialog/comment-dialog.component';
+
 
 @Component({
   selector: 'app-movie-list',
@@ -7,8 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieListComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public dialog:MatDialog) { }
+  openDialog(){
+  	this.dialog.open(CommentDialogComponent);
+  }
   ngOnInit() {
   }
 
