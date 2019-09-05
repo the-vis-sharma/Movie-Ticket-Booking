@@ -7,12 +7,18 @@ import { SearchComponent } from './body/search/search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule, MatOptionModule,MatSelectModule} from '@angular/material';
 import { FilterComponent } from './body/filter/filter.component';
+import { CardsComponent } from './body/cards/cards.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { DialogComponent } from './body/dialog/dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    FilterComponent
+    FilterComponent,
+    CardsComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +27,8 @@ import { FilterComponent } from './body/filter/filter.component';
     MatInputModule,
     MatOptionModule,
     MatSelectModule,
+    MatCardModule,
+    MatButtonModule
 
   ],
   providers: [],
