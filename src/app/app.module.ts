@@ -8,7 +8,8 @@ import { HeaderComponent} from './navigation/header/header.component';
 import { SidenavBarComponent } from './navigation/sidenav-bar/sidenav-bar.component';
 import { MatButtonModule, MatToolbarModule, MatButtonToggleModule, MatSidenavModule, MatMenuModule,
    MatSliderModule, MatSlideToggleModule, MatIconModule, MatCardModule, MatGridListModule,
-    MatListModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatOptionModule, MatChipsModule, MatPaginatorModule} from '@angular/material';
+    MatListModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatOptionModule, MatChipsModule, 
+    MatPaginatorModule, MatDialogModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -16,9 +17,9 @@ import { FavListComponent } from './fav-list/fav-list.component';
 import { MyBookingComponent } from './my-booking/my-booking.component';
 import { SearchComponent } from './body/search/search.component';
 import { FilterComponent } from './body/filter/filter.component';
-import { CardsComponent } from './body/cards/cards.component';
+import { MovieListComponent } from './body/movie-list/movie-list.component';
+import { TicketFormComponent } from './ticket-form/ticket-form.component';
 import {DialogComponent } from './body/dialog/dialog.component'
-import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -30,10 +31,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MyBookingComponent,
     SearchComponent,
     FilterComponent,
-    CardsComponent,
-    DialogComponent,
+    MovieListComponent,
+    TicketFormComponent
   ],
-  entryComponents:[DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -61,7 +61,6 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatOptionModule,
     MatSelectModule,
     MatDialogModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
