@@ -3,8 +3,23 @@
 
 
 <mat-card fxLayoutAlign="space-between" fxLayout="row" fxLayout.lt-md="column" class="header-bar">        
-    <app-search></app-search>
-    <app-filter></app-filter>
+    <form fxLayout="row" fxLayout.lt-md="column" >
+        <mat-form-field fxFlex>    
+            <input matInput placeholder="Search by Title" (input)="searchMovieByTitle($event.target.value)">
+        </mat-form-field>
+    </form>
+
+    <form fxLayout="row" fxLayout.lt-md="column">
+        <mat-form-field fxFlex>
+            <mat-label>Filter By Genre</mat-label>
+            <mat-select #fontSize value="16px" (selectionChange)="filterByGenre($event)">
+                <mat-option value="all">All</mat-option>
+                <mat-option value="action">Action</mat-option>
+                <mat-option value="horror">Horror</mat-option>
+                <mat-option value="comedy">Comedy</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
 </mat-card>
                  
 <mat-grid-list cols="4" rowHeight="1:2" class="list-card" gutterSize="30px">

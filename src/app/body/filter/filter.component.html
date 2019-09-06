@@ -1,7 +1,7 @@
 <form fxLayout="row" fxLayout.lt-md="column">
 <mat-form-field fxFlex>
   <mat-label>FILTER BY GENRE</mat-label>
-  <mat-select #fontSize value="16px">
+  <mat-select #fontSize value="16px" (selectionChange)="filterByCategory($event)">
     <mat-option value="action">Action</mat-option>
     <mat-option value="horror">Horror</mat-option>
     <mat-option value="comedy">Comedy</mat-option>

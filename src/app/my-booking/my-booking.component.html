@@ -1,7 +1,7 @@
-<mat-card fxLayoutAlign="space-between" fxLayout="row" fxLayout.lt-md="column" class="header-bar">        
+<!---<mat-card fxLayoutAlign="space-between" fxLayout="row" fxLayout.lt-md="column" class="header-bar">        
     <app-search></app-search>
     <app-filter></app-filter>
-</mat-card>
+</mat-card>-->
                     
 <mat-grid-list cols="4" rowHeight="1:2" class="list-card" gutterSize="30px">
     <mat-grid-tile *ngFor="let ticket of ticketList"><app-ticket-card [ticket]="ticket"></app-ticket-card></mat-grid-tile>

@@ -2,16 +2,18 @@
 	<mat-card-content fxLayout="column">
 		<div>
 			<img mat-card-image src="{{ ticket.movie.poster }}" alt="Photo of a Shiba Inu">
-            <a routerLink="/addMovieToFav">
-                <button mat-icon-button color="warn" class="favourite-icon">
-				    <i class="material-icons">favorite</i>
-                </button>
-            </a>
-		</div>
+          </div>
 
 		<div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
 			<p>{{ ticket.movie.title }} <span class="highlight">({{ ticket.movie.rating }}/5 <i class="material-icons rating-star">star</i>)</span></p>
 		</div>
-		
+        
+        <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
+			<p>{{ ticket.username }}</p>
+        </div>
+        
+        <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
+            <span class="highlight">{{ ticket.seats }} X {{ ticket.movie.price }} = {{ ticket.amount | currency : 'INR' }}</span>
+        </div>
   	</mat-card-content>
 </mat-card>

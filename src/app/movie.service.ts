@@ -25,6 +25,16 @@ export class MovieService {
     console.log("url : " + this.baseUrl + this.movies + "/"  + id)
     return this.http.get(this.baseUrl + this.movies + "/"  + id);
   }
+  
+  public getMovieDetailByTitle(title : string) : Observable<any> {
+    console.log("url : " + this.baseUrl + this.movies + "?name="  + title);
+    return this.http.get(this.baseUrl + this.movies + "?name="  + title);
+  }
+
+  public getMovieDetailByGenre(genre : string) : Observable<any> {
+    console.log("url : " + this.baseUrl + this.movies + "?genre="  + genre);
+    return this.http.get(this.baseUrl + this.movies + "?genre="  + genre);
+  }
 
   public bookTicket(data) : Observable<any> {
     console.log("url : " + this.baseUrl + this.tickets)
