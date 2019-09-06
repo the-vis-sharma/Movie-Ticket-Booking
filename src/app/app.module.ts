@@ -20,6 +20,8 @@ import { FilterComponent } from './body/filter/filter.component';
 import { MovieListComponent } from './body/movie-list/movie-list.component';
 import { TicketFormComponent } from './ticket-form/ticket-form.component';
 import { CardsComponent } from './body/cards/cards.component';
+import { EditFormComponent } from './favourite/edit-form/edit-form.component';
+import { CardComponent } from './favourite/card/card.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { CardsComponent } from './body/cards/cards.component';
     FilterComponent,
     MovieListComponent,
     TicketFormComponent,
-    CardsComponent
+    CardsComponent,
+    EditFormComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
