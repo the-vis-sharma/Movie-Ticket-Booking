@@ -2,9 +2,10 @@
 	<mat-card-content fxLayout="column">
 		<div>
 			<img mat-card-image src="https://m.media-amazon.com/images/M/MV5BMTk5ODUxMjIzNV5BMl5BanBnXkFtZTcwMDI1MTMyMQ@@._V1_SX300.jpg" alt="Photo of a Shiba Inu">
-			<button mat-icon-button color="warn" (click)="openDialog()" class="favourite-icon">
+			<a routerLink="/addMovieToFav"><button mat-icon-button color="warn" class="favourite-icon">
 				<i class="material-icons">favorite</i>
 			</button>
+			</a>
 		</div>
 
 		<div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
