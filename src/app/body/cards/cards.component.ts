@@ -3,6 +3,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatDialog} from '@angular/material/dialog';
 import {DialogComponent} from '../dialog/dialog.component';
 
+
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
@@ -16,6 +17,7 @@ export class CardsComponent implements OnInit {
   openDialog(){
   	this.dialog.open(DialogComponent);
   }
+
   ngOnInit() {
   }
 

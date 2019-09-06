@@ -1,18 +1,13 @@
 <div class="example-container">
 <mat-dialog-content>
-	<form fxLayout="column" fxLayout.lt-md="column" >
-  <mat-form-field>
-    <input matInput placeholder="Please Enter your Name">
-  </mat-form-field>
+    <form fxLayout="column" fxLayout.lt-md="column" [formGroup]="addFavForm">
  <mat-form-field>
-    <input matInput placeholder="Enter Comments">
-  </mat-form-field>
-  <button mat-flat-button color="primary" mat-dialog-close>Save</button>
+   <input matInput placeholder="Please Enter your Name" formControlName="username">
+ </mat-form-field>
+<mat-form-field>
+   <input matInput placeholder="Enter Comments" formControlName="comment">
+ </mat-form-field>
+ <button mat-flat-button color="primary" mat-dialog-close (click)="onSubmit(addFavForm.value)">Save</button>
 </form>
 </mat-dialog-content>
-
-<!-- <mat-dialog-actions>
-  <button mat-flat-button color="primary" mat-dialog-close>Save</button>
-</mat-dialog-actions> -->
 </div>
-

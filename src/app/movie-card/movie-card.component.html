@@ -2,11 +2,11 @@
 	<mat-card-content fxLayout="column">
 		<div>
 			<img mat-card-image src="{{ movie.poster }}" alt="Photo of a Shiba Inu">
-            <a routerLink="/addMovieToFav">
-                <button mat-icon-button color="warn" class="favourite-icon">
+            <!--<a routerLink="/addMovieToFav">-->
+                <button mat-icon-button class="favourite-icon" (click)="openDialog()">
 				    <i class="material-icons">favorite</i>
                 </button>
-            </a>
+            <!--</a>-->
 		</div>
 
 		<div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">

@@ -19,7 +19,7 @@ describe('MovieListComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the movie component', () => {
     expect(component).toBeTruthy();
   });
 });

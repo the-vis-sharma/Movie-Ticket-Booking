@@ -51,6 +51,10 @@ export class MovieService {
     return this.http.get(this.baseUrl + this.favourite + "?username=" + username);
   }
 
+  public addToFavList(favourite) : Observable<any> {
+    return this.http.post(this.baseUrl + this.favourite, favourite);
+  } 
+
 
   public modifyComment(favId: string, comment: string) : Observable<any> {
     return this.http.put(this.baseUrl + this.favourite + "/" + favId + "?comment=" + comment, {});

@@ -23,6 +23,7 @@ import { CardsComponent } from './body/cards/cards.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { FavListFormComponent } from './body/fav-list-form/fav-list-form.component';
 import { TicketCardComponent } from './ticket-card/ticket-card.component';
+import {DialogComponent} from './body/dialog/dialog.component';
 
 
 @NgModule({
@@ -39,8 +40,10 @@ import { TicketCardComponent } from './ticket-card/ticket-card.component';
     CardsComponent,
     MovieCardComponent,
     FavListFormComponent,
-    TicketCardComponent
+    TicketCardComponent,
+    DialogComponent
   ],
+  entryComponents:[DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

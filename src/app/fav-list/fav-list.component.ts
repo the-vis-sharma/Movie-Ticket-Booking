@@ -11,7 +11,7 @@ export class FavListComponent implements OnInit {
   favouriteList : [];
 
   constructor(private movieService : MovieService) { 
-    movieService.getFavouriteList("pooja").subscribe(data => {
+    movieService.getFavouriteList("visnu").subscribe(data => {
       console.log("apka data: ",data.data);
       this.favouriteList = data.data;
     });
