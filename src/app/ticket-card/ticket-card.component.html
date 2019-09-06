@@ -1,7 +1,7 @@
 <mat-card>
 	<mat-card-content fxLayout="column">
 		<div>
-			<img mat-card-image src="{{ movie.poster }}" alt="Photo of a Shiba Inu">
+			<img mat-card-image src="{{ ticket.movie.poster }}" alt="Photo of a Shiba Inu">
             <a routerLink="/addMovieToFav">
                 <button mat-icon-button color="warn" class="favourite-icon">
 				    <i class="material-icons">favorite</i>
@@ -10,8 +10,7 @@
 		</div>
 
 		<div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
-			<p>{{ movie.title }} <span class="highlight">({{ movie.rating }}/5 <i class="material-icons rating-star">star</i>)</span></p>
-			<a routerLink="/bookTicket/{{ movie._id }}"><button mat-flat-button color="primary" >Book Tickets</button></a>
+			<p>{{ ticket.movie.title }} <span class="highlight">({{ ticket.movie.rating }}/5 <i class="material-icons rating-star">star</i>)</span></p>
 		</div>
 		
   	</mat-card-content>

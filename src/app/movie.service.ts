@@ -13,11 +13,29 @@ export class MovieService {
 
   movies = "movies"
 
+  tickets = "tickets";
+
   constructor(private http : HttpClient) { }
 
   public getMovieList() : Observable<any> {
     return this.http.get(this.baseUrl + this.movies);
   }
+
+  public getMovieDetailById(id : string) : Observable<any> {
+    console.log("url : " + this.baseUrl + this.movies + "/"  + id)
+    return this.http.get(this.baseUrl + this.movies + "/"  + id);
+  }
+
+  public bookTicket(data) : Observable<any> {
+    console.log("url : " + this.baseUrl + this.tickets)
+    return this.http.post(this.baseUrl + this.tickets, data);
+  }
+
+  public getBoookedTickets(username : string) : Observable<any> {
+    console.log("url : " + this.baseUrl + this.tickets)
+    return this.http.get(this.baseUrl + this.tickets + "?username=" + username);
+  }
+
 
   public getFavouriteList(username: string) : Observable<any> {
     return this.http.get(this.baseUrl + this.favourite + "?username=" + username);

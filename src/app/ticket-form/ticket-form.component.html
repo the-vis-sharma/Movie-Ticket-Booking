@@ -5,29 +5,30 @@
 <section fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center" fxLayout.gt-xs="row" class="header-bar">
     <mat-card fxFlex=350px>
         <mat-card-title>
-            Movie Name:  
+            Movie Name:  {{ movie.title }}
         </mat-card-title>
         <mat-card-content>
-            Total Tickets: 100
+            Available Tickets: {{ movie.availableTickets }} 
         </mat-card-content>
         <mat-card-content>
-            Available Tickets: 
+            Booked Tickets: {{ movie.bookedTickets }}
         </mat-card-content>
         <mat-card-content>
-            Booked Tickets: 
+            Price: {{ movie.price | currency:'INR' }}
         </mat-card-content>
     </mat-card>
 </section>
 <section fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center" fxLayout.gt-xs="row" class="header-bar my-space">
     <mat-card fxFlex=350px>
-        <form fxLayout="column" fxLayout.lt-md="column" >
+        <form fxLayout="column" fxLayout.lt-md="column" [formGroup]="bookForm" (ngSubmit)="bookTicketAction(bookForm.value)">
             <mat-form-field fxFlex>    
-                <input matInput placeholder="Enter Name">
+                <input matInput placeholder="Enter Name" formControlName="username">
             </mat-form-field>
             <mat-form-field appearence="outline" fxFlex>    
-                    <input matInput placeholder="How many Tickets?">
+                    <input matInput placeholder="How many Tickets?" formControlName="seats">
             </mat-form-field>
-            <button mat-raised-button color="primary">
+            <input type="hidden" value="200" formControlName="amount">
+            <button mat-raised-button color="primary" type="submit">
                     Book
             </button>
         </form>

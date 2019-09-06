@@ -13,7 +13,7 @@ const routes: Routes = [
    {path: 'favList', component: FavListComponent},
    {path: 'myBooking', component: MyBookingComponent},
   {path: 'welcome', component: MovieListComponent},
-  {path: 'bookTicket', component: TicketFormComponent},
+  {path: 'bookTicket/:id', component: TicketFormComponent},
   {path: 'addMovieToFav', component: FavListFormComponent}
 ];
 

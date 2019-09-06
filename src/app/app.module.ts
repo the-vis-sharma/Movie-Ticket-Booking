@@ -22,6 +22,7 @@ import { TicketFormComponent } from './ticket-form/ticket-form.component';
 import { CardsComponent } from './body/cards/cards.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { FavListFormComponent } from './body/fav-list-form/fav-list-form.component';
+import { TicketCardComponent } from './ticket-card/ticket-card.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FavListFormComponent } from './body/fav-list-form/fav-list-form.compone
     TicketFormComponent,
     CardsComponent,
     MovieCardComponent,
-    FavListFormComponent
+    FavListFormComponent,
+    TicketCardComponent
   ],
   imports: [
     BrowserModule,
