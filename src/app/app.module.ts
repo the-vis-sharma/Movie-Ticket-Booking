@@ -8,7 +8,8 @@ import { HeaderComponent} from './navigation/header/header.component';
 import { SidenavBarComponent } from './navigation/sidenav-bar/sidenav-bar.component';
 import { MatButtonModule, MatToolbarModule, MatButtonToggleModule, MatSidenavModule, MatMenuModule,
    MatSliderModule, MatSlideToggleModule, MatIconModule, MatCardModule, MatGridListModule,
-    MatListModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatOptionModule, MatChipsModule, MatPaginatorModule, MatDialogModule} from '@angular/material';
+    MatListModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatOptionModule, MatChipsModule, 
+    MatPaginatorModule, MatDialogModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -18,7 +19,7 @@ import { SearchComponent } from './body/search/search.component';
 import { FilterComponent } from './body/filter/filter.component';
 import { MovieListComponent } from './body/movie-list/movie-list.component';
 import { TicketFormComponent } from './ticket-form/ticket-form.component';
-import { CommentDialogComponent } from './body/comment-dialog/comment-dialog.component';
+import { CardsComponent } from './body/cards/cards.component';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { CommentDialogComponent } from './body/comment-dialog/comment-dialog.com
     FilterComponent,
     MovieListComponent,
     TicketFormComponent,
-    CommentDialogComponent
+    CardsComponent
   ],
   imports: [
     BrowserModule,
