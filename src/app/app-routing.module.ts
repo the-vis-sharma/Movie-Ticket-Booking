@@ -4,6 +4,7 @@ import { FavListComponent } from './fav-list/fav-list.component';
 import { MyBookingComponent } from './my-booking/my-booking.component';
 import { MovieListComponent } from './body/movie-list/movie-list.component';
 import { TicketFormComponent } from './ticket-form/ticket-form.component';
+import { FavListFormComponent } from './body/fav-list-form/fav-list-form.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
    {path: 'favList', component: FavListComponent},
    {path: 'myBooking', component: MyBookingComponent},
   {path: 'welcome', component: MovieListComponent},
-  {path: 'bookTicket', component: TicketFormComponent}
+  {path: 'bookTicket', component: TicketFormComponent},
+  {path: 'addMovieToFav', component: FavListFormComponent}
 ];
 
 @NgModule({
@@ -20,5 +22,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [FavListComponent, MyBookingComponent, MovieListComponent, TicketFormComponent]
+export const routingComponents = [FavListComponent, MyBookingComponent, MovieListComponent, TicketFormComponent, FavListFormComponent]
 

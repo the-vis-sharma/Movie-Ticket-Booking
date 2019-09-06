@@ -21,6 +21,7 @@ import { MovieListComponent } from './body/movie-list/movie-list.component';
 import { TicketFormComponent } from './ticket-form/ticket-form.component';
 import { CardsComponent } from './body/cards/cards.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
+import { FavListFormComponent } from './body/fav-list-form/fav-list-form.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { MovieCardComponent } from './movie-card/movie-card.component';
     MovieListComponent,
     TicketFormComponent,
     CardsComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    FavListFormComponent
   ],
   imports: [
     BrowserModule,
