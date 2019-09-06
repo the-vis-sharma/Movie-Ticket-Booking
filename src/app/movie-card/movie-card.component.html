@@ -1,0 +1,16 @@
+<mat-card>
+	<mat-card-content fxLayout="column">
+		<div>
+			<img mat-card-image src="{{ movie.poster }}" alt="Photo of a Shiba Inu">
+			<button mat-icon-button color="warn" (click)="openDialog()" class="favourite-icon">
+				<i class="material-icons">favorite</i>
+			</button>
+		</div>
+
+		<div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
+			<p>{{ movie.title }} <span class="highlight">({{ movie.rating }}/5 <i class="material-icons rating-star">star</i>)</span></p>
+			<a routerLink="/bookTicket"><button mat-flat-button color="primary" >Book Tickets</button></a>
+		</div>
+		
+  	</mat-card-content>
+</mat-card>

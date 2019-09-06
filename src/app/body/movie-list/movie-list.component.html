@@ -7,12 +7,8 @@
     <app-filter></app-filter>
 </mat-card>
                  
-<mat-grid-list cols="4" rowHeight="1:1" class="list-card" gutterSize="30px">
-    <mat-grid-tile><app-cards></app-cards></mat-grid-tile>
-    <mat-grid-tile><app-cards></app-cards></mat-grid-tile>
-    <mat-grid-tile><app-cards></app-cards></mat-grid-tile>
-    <mat-grid-tile><app-cards></app-cards></mat-grid-tile>
-    <mat-grid-tile><app-cards></app-cards></mat-grid-tile>
+<mat-grid-list cols="4" rowHeight="1:2" class="list-card" gutterSize="30px">
+    <mat-grid-tile *ngFor="let movie of movieList"><app-movie-card [movie]="movie"></app-movie-card></mat-grid-tile>
 </mat-grid-list>
       
       

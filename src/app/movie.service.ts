@@ -11,7 +11,13 @@ export class MovieService {
 
   favourite = "favourites"
 
+  movies = "movies"
+
   constructor(private http : HttpClient) { }
+
+  public getMovieList() : Observable<any> {
+    return this.http.get(this.baseUrl + this.movies);
+  }
 
   public getFavouriteList(username: string) : Observable<any> {
     return this.http.get(this.baseUrl + this.favourite + "?username=" + username);
