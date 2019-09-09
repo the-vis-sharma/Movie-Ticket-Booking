@@ -12,6 +12,7 @@ export class TicketFormComponent implements OnInit {
   
   movieId : string;
   movie : any;
+  seats : number;
 
   public bookForm : FormGroup;
 

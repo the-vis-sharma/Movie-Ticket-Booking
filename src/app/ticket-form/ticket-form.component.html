@@ -25,7 +25,7 @@
                 <input matInput placeholder="Enter Name" formControlName="username">
             </mat-form-field>
             <mat-form-field appearence="outline" fxFlex>    
-                    <input matInput placeholder="How many Tickets?" formControlName="seats">
+                    <input matInput placeholder="How many Tickets?" [(ngModel)]="seats" formControlName="seats">
             </mat-form-field>
             <input type="hidden" value="200" formControlName="amount">
             <button mat-raised-button color="primary" type="submit">
